@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Crear cuenta</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Confirmar contraseña</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="success" expand="block" [routerLink]="['/login']">Crear cuenta</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
